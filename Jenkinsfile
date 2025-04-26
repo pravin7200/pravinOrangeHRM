@@ -43,5 +43,8 @@ pipeline {
         failure {
             echo 'Pipeline failed. Please check the error logs!'
         }
+        always {
+        archiveArtifacts artifacts: 'playwright-report/**', fingerprint: true
+       }
     }
 }
