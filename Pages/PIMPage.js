@@ -15,9 +15,7 @@ class PIMPage {
       await this.firstNameInput.fill(firstName);
       await this.middleNameInput.fill(middleName);
       await this.lastNameInput.fill(lastName);
-    //   if (employeeId) {
-    //     await this.employeeIdInput.fill(employeeId);
-    //   }
+    
       await this.saveButton.click();
     }
     async navigateToAddEmployee() {
